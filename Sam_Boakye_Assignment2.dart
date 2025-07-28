@@ -11,7 +11,7 @@ void main() {
   BigInt total() {
     BigInt sum = BigInt.from(0);
     for (int i = 1; i <= 64; i++) {
-      sum += BigInt.from(2).pow(i - 1);
+      sum += square(i);
     }
     return sum;
   }
