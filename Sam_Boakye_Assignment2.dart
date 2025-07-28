@@ -1,7 +1,11 @@
 void main() {
   BigInt square(final int n) {
-    BigInt grainCount = BigInt.from(2).pow(n - 1);
-    return grainCount;
+    if (n > 56 || n < 1) {
+      print('Invalid square number, must be between 1 and 56');
+      return BigInt.from(0);
+    } else {
+      return BigInt.from(2).pow(n - 1);
+    }
   }
 
   BigInt total() {
