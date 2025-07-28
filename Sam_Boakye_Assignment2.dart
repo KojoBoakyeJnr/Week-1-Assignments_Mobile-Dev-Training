@@ -1,6 +1,6 @@
 void main() {
   BigInt square(final int n) {
-    if (n > 56 || n < 1) {
+    if (n > 64 || n < 1) {
       print('Invalid square number, must be between 1 and 56');
       return BigInt.from(0);
     } else {
@@ -10,7 +10,7 @@ void main() {
 
   BigInt total() {
     BigInt result = BigInt.from(0);
-    for (int square = 1; square < 66; square++) {
+    for (int square = 0; square < 65; square++) {
       result += BigInt.from(2).pow(square - 1);
     }
 
